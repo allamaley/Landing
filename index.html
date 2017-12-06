@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Landing Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Open+Sans" rel="stylesheet">
+  <!--bootstr css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!--Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--CDN versions of jQuery and Popper.js -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+  <!--Bootstrap js-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+  <!--jQuery lib
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+  <!--My js code-->
+  <script src="js/myscript.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#nav">
+
+  <div class="container-fluid">
+    <!--First parallax section-->
+    <div class="container-fluid" id='home'>
+      <div class="row paral">
+        <div><a id='angle-down' href="#nav"><i class="fa fa-angle-down fa-bounce fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="cap">
+          <span class="span-cap">
+              Mountains
+            </span>
+        </div>
+      </div>
+    </div>
+    <!--End of container-fluid for home section-->
+    <!--End of First parallax section-->
+    <!--Navigation menu-->
+    <nav id='nav' class="navbar navbar-default navbar-expand-sm sticky-top justify-content-center">
+      <a class="navbar-brand mr-auto" href="#">
+        <span class="logo">M</span>
+      </a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler custom" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <!--<span class="navbar-toggler-icon"></span>-->
+      </button>
+      <!--links for menu-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav navbar-nav w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Mountains</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">Volcanoes</a>
+          </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Other
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section4">Facts</a>
+            <a class="dropdown-item" href="#section5">FAQ</a>
+            <a class="dropdown-item" href="#section6">Our team</a>
+            <a class="dropdown-item" href="#contacts">Feedback</a>
+          </div>
+        </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!--End of Navigation menu-->
+
+
+
+    <div id="about" class="container-fluid">
+      <div class="container container-about">
+        <!--row-about-->
+        <div class="row row-about">
+          <!-- start feature box item -->
+          <div class="col-md-8 col-sm-10 col-xs-12 text-center center-col">
+            <span class="alt-font text-alt d-block">Mountains</span>
+            <h2>A mountain is a large landform that stretches above the surrounding land in a limited area, usually in the form of a peak.</h2>
+          </div>
+          <!-- end feature box item -->
+        </div>
+        <!--end of row-about-->
+        <!--row-about-2-->
+        <div class="row row-about-2">
+          <div class="col-md-4">
+            <img class="img-fluid rounded" src="img/m_kangchenjunga.jpg" alt="Kangchenjunga mountain" width="460">
+            <span class="alt-font text-alt d-block text-center">Everest</span>
+            <p class="width-90 md-width-100">A mountain is a large landform that stretches above the surrounding land in a limited area, usually in the form of a peak. A mountain is generally steeper than a hill.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid rounded" src="img/m_k2.jpg" alt="K2 mountain" width="460">
+            <span class="alt-font text-alt d-block text-center">K2</span>
+            <p class="width-90 md-width-100">Mountains are formed through tectonic forces or volcanism. These forces can locally raise the surface of the earth.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid rounded" src="img/m_kangchenjunga.jpg" alt="Kangchenjunga mountain" width="460">
+            <span class="alt-font text-alt d-block text-center">Kangchenjunga</span>
+            <p class="width-90 md-width-100">A few mountains are isolated summits, but most occur in huge mountain ranges. High elevations on mountains produce colder climates than at sea level.</p>
+          </div>
+        </div>
+        <!--end of row-about-2-->
+      </div>
+      <!--end of container-about-->
+    </div>
+    <!--end of container-fluid for about section-->
+    <div id="news" class="container-fluid">
+      <div class="row row-news h-100">
+        <!--<div class="col">-->
+        <div class="paral2">
+          <div class="col-12 offset-0 col-md-8 offset-md-2 text-center split2">
+            <h1>Volcanoes</h1>
+            <p>Volcanoes are formed when a plate is pushed below another plate, or at a mid-ocean ridge or hotspot. At a depth of around 100 km, melting occurs in rock above the slab (due to the addition of water), and forms magma that reaches the surface.
+              When the magma reaches the surface, it often builds a volcanic mountain, such as a shield volcano or a stratovolcano.
+            </p>
+          </div>
+        </div>
+        <!--</div>-->
+        <!--end of col-->
+      </div>
+    </div>
+    <!--end of container-fluid for news section-->
+
+
+
+
+
+
+
+
+
+
+    <div id='section4' class="container-fluid">
+      <div class="row row-section4">
+        <!-- start feature box item -->
+        <div class="col-md-8 col-sm-10 col-xs-12 text-center center-col">
+          <span class="alt-font text-alt d-block">Some facts</span>
+          <h2>Lorem ipsum</h2>
+          <p>There are at least 109 mountains on Earth with elevations greater than 7,200 metres (23,622 ft) above sea level. The vast majority of these mountains are located on the edge of the Indian subcontinent and Tibet, with some peaks in Central Asia.</p>
+        </div>
+        <!-- end feature box item -->
+      </div>
+      <!--end of row-section4-->
+
+
+
+      <div class="container-fluid">
+        <div class="row row-section4-2">
+          <div class="col-sm-4">
+            <div class="content">
+              <a href="#">
+                <div class="content-overlay"></div>
+                <div class="card text-center">
+                  <!--<div class="card-header">
+                    <i class="fa fa-meetup fa-3x" aria-hidden="true"></i>
+                  </div>-->
+                  <div class="card-body">
+                    <i class="d-inline-block fa fa-meetup fa-3x" aria-hidden="true"></i>
+                    <h3>1</h3>
+                    <p>How many mountains are there in the world?</p>
+                  </div>
+                </div>
+                <!--end of card-->
+                <div class="content-details fadeIn-top">
+                  <h3>Oh!</h3>
+                  <p>There are 14 mountains over 8,000 metres</p>
+                </div>
+                <div class="content-details fadeIn-bottom">
+                  <h3>Oh!</h3>
+                  <p>There are 14 mountains over 8,000 metres</p>
+                </div>
+              </a>
+            </div>
+            <!--end of content-->
+          </div>
+          <!--end of column-->
+          <div class="col-sm-4">
+            <div class="content">
+              <a href="#">
+                <div class="content-overlay"></div>
+                <div class="card text-center">
+                  <div class="card-body">
+                    <i class="d-inline-block fa fa-meetup fa-3x" aria-hidden="true"></i>
+                    <h3>2</h3>
+                    <p>How long does it take to reach top of Everest?</p>
+
+                  </div>
+                </div>
+                <!--end of card-->
+                <div class="content-details fadeIn-top">
+                  <h3>Ops!</h3>
+                  <p>Around two months</p>
+                </div>
+                <div class="content-details fadeIn-bottom">
+                  <h3>Ops!</h3>
+                  <p>Around two months</p>
+                </div>
+              </a>
+            </div>
+            <!--end of content-->
+          </div>
+          <div class="col-sm-4">
+            <div class="content">
+              <a href="#">
+                <div class="content-overlay"></div>
+                <div class="card text-center">
+                  <div class="card-body">
+                    <i class="d-inline-block fa fa-meetup fa-3x" aria-hidden="true"></i>
+                    <h3>3</h3>
+                    <p>How many times has k2 been summited?</p>
+
+                  </div>
+                </div>
+                <!--end of card-->
+                <div class="content-details fadeIn-top">
+                  <h3>Hm...</h3>
+                  <p>Only 302 people have completed the ascent</p>
+                </div>
+                <div class="content-details fadeIn-bottom">
+                  <h3>Hm...</h3>
+                  <p>Only 302 people have completed the ascent</p>
+                </div>
+              </a>
+            </div>
+            <!--end of content-->
+          </div>
+        </div>
+        <!--end of row-section4-2-->
+      </div>
+      <!--end of container-fluid for 4-2 section-->
+    </div>
+    <!--end of container-fluid for 4 section-->
+
+
+    <div id='section5' class="container-fluid">
+      <div class="row row-section5">
+        <!-- start feature box item -->
+        <div class="col-md-8 col-sm-10 col-xs-12 text-center center-col">
+          <span class="alt-font text-alt d-block">People ask</span>
+          <h2>FAQ</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+        <!-- end feature box item -->
+      </div>
+      <!--end of row-section5-->
+      <div class="row row-section5-2">
+        <div class="col-md-8 col-sm-10 col-xs-12 center-col">
+          <div id="accordion" role="tablist">
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="alt-font text-alt">1</span>Why is it cold in the mountains?
+                  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" style='background: #212121'>
+                <div class="card-body">
+                  Lower pressure at higher altitudes causes the temperature to be colder on top of a mountain than at sea level.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span class="alt-font text-alt">2</span>Is Mount Fuji still an active volcano?
+                    <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" style='background: #212121'>
+                <div class="card-body">
+                  Mount Fuji Is In A 'Critical State' And Could Be Ready To Blow, Researchers Say. After 307 years, the massive active volcano in Japan may be due for another eruption as a result of a buildup of pressure from the 9.0-magnitude earthquake that hit the country's eastern coast in 2011.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span class="alt-font text-alt">3</span>Why do you read it?
+                    <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" style='background: #212121'>
+                <div class="card-body">
+                  Because you want to hire me.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of accordion-->
+        </div>
+        <!--end of column-->
+      </div>
+      <!--end of row-section5-2-->
+
+
+
+    </div>
+    <!--end of container-fluid for 5 section-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="paral3"></div>
+        </div>
+      </div>
+    </div>
+    <!--end of container-fluid for portfolio section-->
+    <div id='section6' class="container-fluid">
+      <div class="row row-section6">
+        <!-- start feature box item -->
+        <div class="col-md-8 col-sm-10 col-xs-12 text-center center-col">
+          <span class="alt-font text-alt d-block">Crazy people</span>
+          <h2>Team</h2>
+          <p>Meet our team</p>
+        </div>
+        <!-- end feature box item -->
+      </div>
+      <!--end of row section6-->
+      <div class="row row-section6-2">
+        <div class="col-md-6">
+          <div class="content content-1">
+            <a href="#">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="https://www.sbs.com.au/news/sites/sbs.com.au.news/files/20100119000292076058-original_mountain_peak_success_mountain_top.jpg" alt="climber1">
+              <div class="card text-center">
+                <!--<div class="card-header">
+                    <i class="fa fa-meetup fa-3x" aria-hidden="true"></i>
+                  </div>-->
+                <div class="card-body">
+                  <h3>Climber one</h3>
+                  <p>Lorem</p>
+                  <p>Ipsum</p>
+                </div>
+              </div>
+              <!--end of card-->
+              <div class="content-details fadeIn-top">
+                <h3>A title</h3>
+                <p>This is some text</p>
+              </div>
+              <div class="content-details content-details-2 fadeIn-bottom">
+                <h3>Lorem ipsum</h3>
+                <p>This is some text here</p>
+              </div>
+            </a>
+          </div>
+          <!--end of content-->
+        </div>
+        <!--end of column-->
+        <div class="col-md-6">
+          <div class="content content-2">
+            <a href="#">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="http://www.mediadrumworld.com/wp-content/uploads/2017/07/MDRUM_Free_Solo_Climber-1.jpg" alt='climber2' height="266.62px">
+              <div class="card text-center">
+                <!--<div class="card-header">
+                    <i class="fa fa-meetup fa-3x" aria-hidden="true"></i>
+                  </div>-->
+                <div class="card-body">
+                  <h3>Climber two</h3>
+                  <p>Lorem</p>
+                  <p>Ipsum</p>
+                </div>
+              </div>
+              <!--end of card-->
+              <div class="content-details fadeIn-top">
+                <h3>A title</h3>
+                <p>This is some text</p>
+              </div>
+              <div class="content-details content-details-2 fadeIn-bottom">
+                <h3>Lorem ipsum</h3>
+                <p>This is some text here</p>
+              </div>
+            </a>
+          </div>
+          <!--end of content-->
+        </div>
+        <!--end of column-->
+      </div>
+      <!--end of row-section-6-2-->
+    </div>
+    <!--end of container-fluid for 6 section-->
+
+    <div id='contacts' class="container-fluid">
+      <div class="contacts">
+        <img src="img/m_kangchenjunga.jpg" alt="Kangchenjunga mountain">
+        <div class="row row-contacts">
+          <!-- start feature box item -->
+          <div class="col-md-8 col-sm-10 col-xs-12 text-center center-col">
+            <span class="alt-font text-alt d-block">Get in touch</span>
+            <h3>Your feedback</h3>
+            <p>Please fill in the form above</p>
+          </div>
+          <!-- end feature box item -->
+        </div>
+        <!--end of row contacts-->
+        <div class="row row-contacts-2">
+          <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <!--form-->
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName">First name</label>
+                  <input type="text" class="form-control" id="inputName" required>
+
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputLName">Last name (not required)</label>
+                  <input type="text" class="form-control" id="inputLName">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" required>
+
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="inputState">How did you find that webpage?</label>
+                  <select id="inputState" class="form-control" required>
+                    <option value=''>Choose...</option>
+                    <option value='1'>From my CV</option>
+                    <option value='2'>You were forced by me to look at it</option>
+                    <option value='3'>No idea</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="rating">Please rate the website in general:</label>
+                  <fieldset class="rating" id='rating' required>
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label class="full" for="star5" title="Awesome - 5 stars"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label class="full" for="star3" title="Meh - 3 stars"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+
+
+
+
+
+            <!--end of form-->
+          </div>
+          <!--end of column-->
+        </div>
+        <!--end of row-contacts-2-->
+      </div>
+      <!--end of the whole row-->
+    </div>
+    <!--end of container-fluid for contact section-->
+
+
+
+  </div>
+  <!--end of container-fluid for all content of the site-->
+
+  <footer class="container-fluid text-center">
+    <a href="#home" title="To Top"  id='angle-up'>
+    <i class="fa fa-angle-up fa-bounce fa-2x" aria-hidden="true"></i>
+  </a>
+    <p>Made By <a href="#" title="my webpage">Alla Maley</a></p>
+  </footer>
+
+</body>
+
+</html>
