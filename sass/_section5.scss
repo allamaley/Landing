@@ -1,0 +1,50 @@
+/*section 5 */
+#section5{
+    background: $grey-color;
+}
+.row-section5{
+  background: $grey-color;
+  padding-top: 130px;
+  padding-bottom: 90px;
+  overflow: hidden;
+  color: $white-color;
+}
+.row-section5-2{
+  @extend .row-section5;
+  padding-top: 10px;
+}
+/* Accordion styles */
+#accordion{
+  color: #212529;
+  a{
+    display: inline-block;
+    width: 100%;
+    &:hover{
+      text-decoration: none;
+      color: inherit;
+    }
+    i{
+      display: inline-block;
+      float: right;
+    }
+    span{
+        padding-right: 20px;
+    }
+
+  }
+  .collapse{
+      background: $grey-color;
+      color: $white-color;
+      .show{
+        background: $grey-color;
+        color: $white-color;
+      }
+  }
+  .card{
+    border: none;
+    &:hover{
+      -webkit-box-shadow: none;
+              box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.logo {
+  font-family: $alt-font;
+  font-size: 30px;
+  margin-left: 50px;
+}
+nav{
+  background-color: #fff;
+  @include m-15;
+  border-bottom: 1px solid #eee;
+  li{
+    padding: 6px 12px;
+  }
+}
+
+.custom .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.nav{
+  margin-right: 50px;
+}
+.sticky-top{
+      background: rgba(255,255,255,0.95);
+          -webkit-box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+                  box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+}

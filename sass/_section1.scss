@@ -1,0 +1,32 @@
+/*about row */
+.container-about{
+  padding-bottom: 5%;
+}
+.row-about{
+  background: #fff;
+  padding: 130px 0;
+  overflow: hidden;
+
+}
+.row-about-2 span{
+  padding: 20px;
+}
+.center-col {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-alt {
+    color: $alt-color;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+
+.alt-font {
+    font-family: $alt-font;
+    font-weight: 500;
+}
+h2 {
+    line-height: 40px;
+}
