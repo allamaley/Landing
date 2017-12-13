@@ -1,0 +1,126 @@
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans); //CSS import fonts
+//@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css);
+//@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import 'variables';//imports file _variables.scss.  They use a _ prefix notation in the file name that tells Sass to hold off on compiling the file individually and instead import it.
+//@import "helper/placeholders";//A reminder that helper refers to resources like variables, mixins, functions, etc. These are the elements that "help" make up the foundation of your codebase as it grows.
+//import sass file...
+@import 'mixins';
+@import 'navigation';
+@import 'section1';
+@import 'section2';
+@import 'section4';
+@import 'section5';
+@import 'section6';
+@import 'contacts';
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body, html {
+          position: relative; /*Requires relative positioning for scrollsspy*/
+          @include reset-0;
+          height: 100%;
+          font-family: $main-font;
+}
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+.col{
+  padding: 0;
+}
+.paral {
+  @include paral('m1');
+  height: 100vh;
+  display: none;
+}
+.paral2 {
+  position: relative;
+  @include paral('m2');
+  height: 100vh;
+}
+.paral3 {
+  @include paral('m1');
+  min-height: 400px;
+}
+
+.span-cap {
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: $alt-font;
+    font-size: 60px;
+}
+.cap {
+    position: relative;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    z-index:100;
+}
+
+.paral div:nth-child(1){
+  position: relative;
+  left: 0;
+  top: 95%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  z-index:200;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/* Icon bounce from GitHub https://gist.github.com/gubi/8483199*/
+.fa-bounce {
+    display: inline-block;
+    position: relative;
+    -webkit-animation: bounce 1s infinite linear;
+    animation: bounce 1s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+/* Icon pulse from GitHub https://gist.github.com/gubi/8483199*/
+.fa-pulse {
+	display: inline-block;
+	-webkit-animation: pulse 2s infinite linear;
+	animation: pulse 2s infinite linear;
+}
+
+@-webkit-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+//@import "../css/styles.css";

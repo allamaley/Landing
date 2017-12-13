@@ -1,0 +1,25 @@
+@mixin reset-0 {
+          margin: 0;
+          padding: 0;
+}
+
+@mixin photo-content($file) {
+  background-image: url(../img/#{$file}.jpg);
+}
+@mixin paral($file) {
+    @include photo-content($file);
+    background: {
+        attachment: fixed;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+}
+@mixin m-15 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}

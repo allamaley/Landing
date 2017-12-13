@@ -1,0 +1,141 @@
+/* Contacts section */
+#contacts{
+    padding: 75px 0;
+    color: $white-color;
+    .contacts{
+      position: relative;
+      @include m-15;
+      overflow: hidden;
+      background: rgba(0,0,0,0.7);
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      opacity: 0.3;
+    }
+    input{
+      background-color: rgba(255,255,255,0.4);
+      border: none;
+      border-radius: 0;
+      color: $white-color;
+      &:focus{
+        border: 1px solid #fff;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+      }
+    }
+    select{
+      background-color: rgba(255,255,255,0.4);
+      border: none;
+      @include border-radius(0);
+      color: $white-color;
+      &:focus{
+        border: 1px solid #fff;
+        @include border-radius(0);
+        -webkit-box-shadow: none;
+                box-shadow: none;
+      }
+    }
+    .form-control{
+      @include border-radius(0);
+    }
+    button{
+    border-bottom: 4px solid $alt-color;
+    background: $alt-color;
+    border:none;
+    width: 180px;
+    text-transform: uppercase;
+    &:active{
+    background-color: $alt-color;
+      -webkit-transform: translateY(4px);
+              transform: translateY(4px);
+    }
+    }
+}
+
+.row-contacts{
+  padding-top: 130px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.row-contacts-2{
+  @extend .row-contacts;
+  padding-top: 0px;
+}
+/*adjustment for the smaller screens*/
+@media (max-width: 480px) {
+  .row-contacts-2>div{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1469px) {
+  .row-contacts-2>div{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+
+/*Input forms*/
+
+select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+
+    padding: .5em;
+    padding-right: 1.5em
+}
+
+input[type=submit], button {
+    cursor: pointer;
+
+}
+
+.btn{
+  border: none;
+  border-radius: 0;
+}
+/*Rating*/
+
+
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+  > input {
+    display: none;
+  }
+  > label {
+    color: #ddd;
+   float: right;
+   &:before {
+     margin: 5px;
+     font-size: 1.25em;
+     font-family: FontAwesome;
+     display: inline-block;
+     content: "\f005";
+   }
+  }
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show orange star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #f3973f ;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* change color of the current selection to lighter one*/
+.rating > input:checked ~ label:hover ~ label { color: #f5c18f;  }

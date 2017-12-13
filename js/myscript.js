@@ -36,6 +36,25 @@ $(document).ready(function(){
     } // End if
   });
 //end soft scroll
+
+// Add soft anchor links scroll
+var anchors = [$("#a-home"), $("#a-about"), $("#a-news"),$("#a-section4"),$("#a-section5"),$("#a-section6"),$("#a-contacts")];
+for ( var i = 0, l = anchors.length; i < l; i++ ) {
+	anchors[i].on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 700, function(){
+				window.location.hash = hash;
+			});
+		} // End if
+	});
+};
+
+//end soft scroll
+
 //scrollspy nav
 $('body').scrollspy({ target: '#nav' })
 //end of scrollspy nav

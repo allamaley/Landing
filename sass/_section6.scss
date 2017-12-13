@@ -1,0 +1,45 @@
+/*Section6 */
+#section6{
+    padding: 75px 0;
+    .content-1{
+      float: right;
+    }
+    .content-2{
+      float: left;
+    }
+    .content:hover .content-details-2{
+      top: 90%;
+      left: 50%;
+      opacity: 1;
+      background-color: $grey-color;
+      height: 280px;
+    }
+    .fadeIn-bottom{
+      top: 100%;
+    }
+    .content-details-2 h3{
+      padding-top: 15%;
+    }
+}
+.row-section6{
+  padding-top: 130px;
+  padding-bottom: 90px;
+  overflow: hidden;
+}
+.row-section6-2{
+  @extend .row-section6;
+  padding-top: 10px;
+  .content{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    .content-overlay {
+      background: rgba(0,0,0,0.7);
+    }
+  }
+}
+
+.content-image{
+  width: 100%;
+}
